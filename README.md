@@ -18,4 +18,19 @@ Notes from the Free Code Camp Git for Professionals Course
 
 # Branching Strategies
 
+- Well documented conventions are critical regardless of the strategy
+- Most projects use the Github Flow model with one long running branch, integrating short running feature/bug fix branches
 
+# Merge Conflicts
+
+- You can always abort a merge/rebase with `git merge --abort || git rebase --abort`
+- Merge conflicts can be resolved by simply cleaning up the file
+
+# Merge vs. Rebase
+
+- Merge
+  - Simply integrates commits from one branch into another
+  - The structure of the branches and their commits is preserved in the git history
+
+- Rebase
+  - Temporarily parks the commits of one branch, then integrates the commits from the new branch, then finally it "rebases" the parked commits on top of everything 
